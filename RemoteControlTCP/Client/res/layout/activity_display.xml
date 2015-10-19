@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.wandou.client.DisplayActivity" >
+
+    <com.wandou.client.MySurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="593dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/buttonRight"
+            android:layout_below="@+id/buttonRight"
+            android:layout_marginTop="37dp"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Right" />
+    </RelativeLayout>
+
+</RelativeLayout>
